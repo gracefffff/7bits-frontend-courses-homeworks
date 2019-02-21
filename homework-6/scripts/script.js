@@ -1,7 +1,6 @@
 var parameters = new URLSearchParams(location.search);
 var query_parameters = {};
 parameters.forEach((value, key) => query_parameters[key] = value );
-console.log(query_parameters);
 if (query_parameters['firstName'] !== undefined) {
     document.getElementById("first-name").value = query_parameters['firstName'];
 }
